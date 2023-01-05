@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{project.title}}</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Press+Start+2P&family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/mainstyle">
+    <style>
+        html {
+            background-image: url("static/projects/{{project.background}}");
+        }
+
+        h1 a {
+            font-size: 50px;
+        }
+
+        table, td, tr, td {
+            border: 2px solid #333333;
+            border-collapse: collapse;
+            padding: 3px;
+        }
+        thead td {
+            background-color: #333333;
+            color: #ffffff;
+        }
+    </style>
+    <link rel="stylesheet" media="screen and (max-width: 450px)" href="/smallstyle">
+    <style>
+        h2 {
+            text-decoration: none;
+        }
+        h2:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1><a href="{{project.link}}" target="_blank">{{project.title}}</a></h1>
+        <h3>{{project.description}}</h3>
+    </section>
+    <section>
+        <h2>Change-log</h2>
+        <table>
+            <thead>
+                <td>Version</td>
+                <td>Date</td>
+                <td>Changes</td>
+            </thead>
+            <tbody>
+                {% for change in project.changelog.values() %}
+                    <tr>
+                        <td>{{change.version}}</td>
+                        <td>{{change.date}}</td>
+                        <td>{{change.text}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

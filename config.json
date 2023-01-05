@@ -1,5 +1,25 @@
 {
     "index": {
-        "title": "Levi"
+        "title": "Levi",
+        "name": "Lëvi Lovie",
+        "description": "I'm self-taught developer",
+        "languages": {
+            "text": "Usualy, I'm coding on these programing languages:",
+            "list": [
+                "HTML & CSS & JS",
+                "Python",
+                "Unity & C#",
+                "Java & C++"
+            ]
+        },
+        "technologies": {
+            "text": "And I'm worked with this technologies:",
+            "list": [
+                "PhotoShop",
+                "Blender",
+                "Fusion 360"
+            ]
+        },
+        "projectsTitle": "Projects"
     }
 }

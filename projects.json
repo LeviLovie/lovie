@@ -1,0 +1,47 @@
+{
+    "wg": {
+        "title": "World Generator",
+        "description": "This's a application for generate an image, it's don't done, but it's already works.",
+        "link": "https://github.com/LeviiLovie/GenerationOfWOrld",
+        "nick": "wg",
+        "image": "wgIcon.png",
+        "background": "wgIcon.png",
+        "changelog": {
+            "0.1": {
+                "version": "0.1",
+                "date": "05/01/23",
+                "text": "Realise to this site"
+            }
+        }
+    },
+    "vindigio": {
+        "title": "Vindigio",
+        "description": "This's a game, writed on java, the game isn't done, but i'll work on this project (maybe i'll rewrite it onn unity)",
+        "link": "https://github.com/LeviiLovie/Vindigio",
+        "nick": "vindigio",
+        "image": "vindigioIcon.png",
+        "background": "vinigioBackground.png",
+        "changelog": {
+            "0.1": {
+                "version": "0.1",
+                "date": "05/01/23",
+                "text": "Realise to this site"
+            }
+        }
+    },
+    "dd": {
+        "title": "My D&D",
+        "description": "This's my realisation D&D game in terminal",
+        "link": "https://github.com/LeviiLovie/D-D",
+        "nick": "dd",
+        "image": "ddIcon.png",
+        "background": "ddBackground.png",
+        "changelog": {
+            "0.1": {
+                "version": "0.1",
+                "date": "05/01/23",
+                "text": "Realise to this site"
+            }
+        }
+    }
+}

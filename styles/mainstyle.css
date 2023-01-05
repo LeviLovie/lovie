@@ -1,0 +1,60 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+html {
+    background-size: cover;
+    width: 100%;
+    color: #333333;
+}
+body {
+    box-shadow: 0 0 14px -1px rgba(0,0,0,1);
+    background-color: #ffffff;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    min-height: calc(100% - 250px);
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 1vw 1vh;
+}
+h1 {
+    text-align: center;
+}
+h1 a {
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    font-size: 75px;
+    color: #05477C;
+}
+h1:hover {
+    text-decoration: underline;
+}
+h2 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    font-size: 30px;
+    color: #333333;
+}
+h2 a {
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    font-size: 30px;
+    color: #333333;
+}
+h2:hover {
+    text-decoration: underline;
+}
+h3 {
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+ul {
+    margin: 5px 0 0 0;
+    padding: 0 20px;
+}

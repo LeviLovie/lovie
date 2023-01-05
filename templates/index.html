@@ -5,8 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>{{config.index.title}}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Press+Start+2P&family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/mainstyle">
+    <style>
+        html {
+            background-image: url(/static/background.png);
+        }
+
+        #projects {
+            color: #333333;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #projects a {
+            color: 666666;
+            padding: 10px;
+        }
+
+        #technologies {
+            width: 100%;
+            display: flex;
+            margin: 10px 0 0 0;
+            padding: 0;
+        }
+        #technologies div {
+            margin: 0 5vw 0 0;
+            padding: 0;
+        }
+
+        #cards {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            /* grid-template-columns: auto auto auto; */
+        }
+        #cards a {
+            text-decoration: none;
+            color: #333333;
+        }
+        .card {
+            box-shadow: 0 0 10px 1px rgba(0,0,0,0.20) inset;
+            border-radius: 10px;
+            /* border: #333333 2px solid; */
+            width: 300px;
+            height: 375px;
+            margin: 10px;
+        }
+        .card:hover {
+            box-shadow: 0 0 10px 2px rgba(0,0,0,0.25) inset;
+        }
+        .card h3 {
+            font-size: 25px;
+            margin: 0;
+            padding: 5px 10px;
+        }
+        .card img {
+            width: 300px;
+            height: auto;
+            border-radius: 7px;
+            /* box-shadow: -10px 0 5px 2px rgba(0,0,0,0.25); */
+        }
+    </style>
+    <link rel="stylesheet" media="screen and (max-width: 385px)" href="/smallstyle">
 </head>
 <body>
-    
+    <section>
+        <h1><a href="https://github.com/LeviiLovie" target="_blank">{{config.index.name}}</a></h1>
+        <h3>{{config.index.description}}</h3>
+
+        <div id="technologies">
+            <div>
+                <h3>{{config.index.languages.text}}</h3>
+                <ul>
+                    {% for language in config.index.languages.list %}
+                        <li>{{language}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div>
+                <h3>{{config.index.technologies.text}}</h3>
+                <ul>
+                    {% for technologie in config.index.technologies.list %}
+                        <li>{{technologie}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2><a href="https://github.com/LeviiLovie?tab=repositories" target="_blank">{{config.index.projectsTitle}}</a></h2>
+        <div id="cards">
+            {% for project in projects.values() %}
+                <!-- <a href="/{{project.nick}}" class="card"> -->
+                <a href="/{{project.nick}}" class="card">
+                    <img src="static/projects/{{project.image}}">
+                    <h3>{{project.title}}</h3>
+                </a>
+            {% endfor %}
+        </div>
+    </section>
 </body>
 </html>

@@ -1,0 +1,43 @@
+html {
+    background-repeat: no-repeat;
+}
+body {
+    top: 100px;
+    min-height: calc(100% - 100px)
+}
+
+.card {
+    width: 90%;
+}
+.card img {
+    width: calc(100% - 1px);
+}
+#technologies {
+    display: block;
+}
+
+h1 {
+    margin: 10px 10px;
+}
+h1 a {
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    font-size: 30px;
+    color: #05477C;
+}
+h2 {
+    margin: 40px 0 0 0;
+}
+h2 a {
+    font-size: 15px;
+}
+h3 {
+    font-size: 12px;
+}
+ul {
+    margin: 2px 0 0 0;
+    padding: 0 10px;
+}
+li {
+    font-size: 10px;
+}
